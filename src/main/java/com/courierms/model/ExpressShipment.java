@@ -1,7 +1,7 @@
 package com.courierms.model;
 
 public class ExpressShipment extends Shipment {
-    public ExpressShipment(String tackingID,String senderName,String receiverName,Double weight,String shipmentDate) {
+    public ExpressShipment(String tackingID,String senderName,String receiverName,double weight,String shipmentDate) {
         super(tackingID, senderName, receiverName, weight, shipmentDate);
     }
 
