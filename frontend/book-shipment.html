@@ -14,9 +14,20 @@
 
         <input type="text" id="senderName" placeholder="Sender Name">
         <input type="text" id="receiverName" placeholder="Receiver Name">
+        <input type="text" id="receiverAddress" placeholder="Receiver Address">
         <input type="number" id="weight" placeholder="Weight (kg)">
+        <input type="text" id="price" placeholder="Calculated Price" readonly style="background-color: #f0f0f0;">
 
-        <select id="shipmentType">
+<button type="button" onclick="calculatePrice()">Calculate Price</button>
+
+<select id="type">
+    <option value="Standard">Standard</option>
+    <option value="Express">Express</option>
+    <option value="Fragile">Fragile</option>
+    <option value="International">International</option>
+</select>
+
+        <select id="type">
             <option value="Standard">Standard</option>
             <option value="Express">Express</option>
             <option value="Fragile">Fragile</option>
