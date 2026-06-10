@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Book Shipment - Smart Courier</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Smart Courier Management System</h2>
+        <h3>Book New Shipment</h3>
+
+        <input type="text" id="senderName" placeholder="Sender Name">
+        <input type="text" id="receiverName" placeholder="Receiver Name">
+        <input type="number" id="weight" placeholder="Weight (kg)">
+
+        <select id="shipmentType">
+            <option value="Standard">Standard</option>
+            <option value="Express">Express</option>
+            <option value="Fragile">Fragile</option>
+            <option value="International">International</option>
+        </select>
+
+        <input type="date" id="shipmentDate">
+
+        <button onclick="bookShipment()">Book Shipment</button>
+
+        <div id="bookingResult"></div>
+
+        <p><a href="customer-dashboard.html">Back to Dashboard</a></p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>

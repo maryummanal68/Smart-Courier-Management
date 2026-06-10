@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manage Users - Smart Courier</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <div class="container">
+        <h2>Manage Users</h2>
+
+        <h3>Add New User</h3>
+
+        <input type="text" id="name" placeholder="Full Name">
+        <input type="email" id="email" placeholder="Email Address">
+        <input type="text" id="phone" placeholder="Phone Number">
+        <input type="password" id="pwd" placeholder="Password">
+
+        <select id="role">
+            <option value="Customer">Customer</option>
+            <option value="Courier">Courier</option>
+            <option value="Admin">Admin</option>
+        </select>
+
+        <button onclick="addUser()">Add User</button>
+
+        <div id="userResult"></div>
+
+        <p><a href="admin-dashboard.html">Back to Dashboard</a></p>
+    </div>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
